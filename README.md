@@ -24,4 +24,6 @@ var data = {
 };
 
 data.toQueryString();
+
+// Output: "categoryId[]=43&categoryId[]=35&categoryId[]=12&salesOnly=1&color=red"
 ```
