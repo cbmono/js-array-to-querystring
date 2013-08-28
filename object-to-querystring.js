@@ -1,3 +1,8 @@
+/**
+ * Transforms a JS key:value object into a valid url query string
+ *
+ * @uses underscore.js (https://github.com/jashkenas/underscore)
+ */
 Object.prototype.toQueryString = function() {
 	
 	var response = '';
