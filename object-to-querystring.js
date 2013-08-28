@@ -2,6 +2,7 @@
  * Transforms a JS key:value object into a valid url query string
  *
  * @uses underscore.js (https://github.com/jashkenas/underscore)
+ * @return string
  */
 Object.prototype.toQueryString = function() {
 	
@@ -11,8 +12,8 @@ Object.prototype.toQueryString = function() {
 	_.each( pairs, function( pair ) {
 		if ((_.isArray( pair[1] ) && pair[1].length) || pair[1] !== '') {
 			var field = pair[0];
-					field += _.isArray( pair[1] ) ? '[]' : '';
-					field += '=';
+			field += _.isArray( pair[1] ) ? '[]' : '';
+			field += '=';
 
 			if (_.isArray( pair[1] )) {
 				var tmpField = '';
